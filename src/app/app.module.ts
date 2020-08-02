@@ -6,6 +6,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,7 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatGridListModule,
     MatIconModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
