@@ -51,3 +51,37 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     min-width: 100px;
     overflow: hidden;
 }
+
+.text-line {
+    padding: 10px 0;
+    border-bottom: 2px solid @blue-secondary;
+    border-top: 2px solid @blue-secondary;
+}
+
+@media screen and (max-width: 750px){
+    .mat-body, .mat-body-1, .mat-typography {
+        font-size: 10px;
+    }   
+    .mat-expansion-panel-header {
+        font-size: 11px;
+    }
+    .mat-tab-label {
+        font-size: 12px;
+    }
+
+    .mat-typography h3 {
+        font-size: 12px;
+    }
+
+    .mat-typography h2 {
+        font-size: 13px;
+    }
+
+    .mat-typography h1 {
+        font-size: 18px;
+    }
+
+    .circle-img {
+        height: 75px;
+    }
+}
