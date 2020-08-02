@@ -1,8 +1,10 @@
 <ul class="list-unstyled experiences">
   <li *ngFor="let experience of experiences">
-    <h3 class="mb-0">{{experience.title}}</h3><span>{{experience.startDate | date:'MM.yyyy'}}</span> - <span *ngIf="experience.finishDate; else elseBlock">{{experience.finishDate | date:'MM.yyyy'}}</span>
-    <ng-template #elseBlock>present</ng-template>
-    <h5>{{experience.company}}</h5>
+    <h3 class="mb-0 mt-1">{{experience.title}}</h3><span class="text-secondary">{{experience.startDate | date:'MM.yyyy'}}</span> - <span class="text-secondary" *ngIf="experience.finishDate; else elseBlock">{{experience.finishDate | date:'MM.yyyy'}}</span>
+    <ng-template #elseBlock><span class="text-secondary">present</span></ng-template>
+    <div class="mb-2">
+      <span class="badge p-0">{{experience.company}}</span>
+    </div>
     <div>
         <p class="text-justify">{{experience.description}}</p>
     </div>

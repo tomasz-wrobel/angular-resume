@@ -2,6 +2,10 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+@blue-primary: #228afa;
+@blue-secondary: #88b5e6;
+@blue-background: #d1e8f5;
+
 .circle-img {
     height: 150px;
     border-radius: 50%;
@@ -19,18 +23,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin-left: 5px;
 }
 
+.cv-wrapper{
+    margin: 0 10%;
+}
+
 .mat-tab-label{
     font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
  } 
 
  .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-     background-color: #007bff;;
+     background-color: @blue-primary;
  }
  
  .mat-progress-bar-fill::after {
-    background-color: #007bff;;
+    background-color: @blue-primary;
  }
 
  .mat-progress-bar-buffer {
-    background-color: #ccdde6;
+    background-color: @blue-background;
 }
