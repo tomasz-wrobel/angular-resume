@@ -1,0 +1,27 @@
+<div class="contact-box p-3">
+  <h1 class="mb-0 pt-1">{{contactBox.firstName}} {{contactBox.lastName}}</h1>
+  <h5>{{contactBox.title}}</h5>
+  <ul class="list-unstyled">
+    <li>
+      <div style="vertical-align: middle;">
+        <span class="mx-2"><mat-icon aria-hidden="false">location_on</mat-icon></span>
+        <span class="aligned-with-icon">{{contactBox.city}}</span>
+      </div>
+    </li>
+    <li>
+      <span class="mx-2"><mat-icon aria-hidden="false">mail</mat-icon></span>
+      <span class="aligned-with-icon">{{contactBox.email}}</span></li>
+    <li>
+        <span class="mx-2"><mat-icon aria-hidden="false">phone_enabled</mat-icon></span>
+        <span class="aligned-with-icon">{{contactBox.mobile}}</span>
+    </li>
+    <li>
+      <span class="mx-2"><mat-icon aria-hidden="false">account_circle</mat-icon></span>
+      <span class="aligned-with-icon"><a href="{{contactBox.linkedin}}">LinkedIn</a></span>
+    </li>
+    <li>
+        <span class="mx-2"><mat-icon aria-hidden="false">code</mat-icon></span>
+        <span class="aligned-with-icon"><a href="{{contactBox.github}}">Github</a></span>
+      </li>
+  </ul>
+</div>

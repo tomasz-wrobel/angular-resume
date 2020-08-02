@@ -1,0 +1,18 @@
+<div class="p-3">
+  <h2>Skills</h2>
+  <mat-accordion>
+      <mat-expansion-panel hideToggle *ngFor="let skill of skills">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+            <span>{{skill.type}}</span>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <ul class="list-unstyled entries pb-3">
+              <li *ngFor="let entry of skill.entries">
+                <span class="badge">{{entry.name}}</span>
+                <mat-progress-bar *ngIf="entry.level>0" mode="determinate" value="{{entry.level}}"></mat-progress-bar>
+              </li>
+          </ul>
+        </mat-expansion-panel>
+      </mat-accordion>
+</div>
