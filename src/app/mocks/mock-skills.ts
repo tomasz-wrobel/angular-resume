@@ -16,6 +16,12 @@ export const SKILLS: Skill[] = [
             {name: 'Angular', level: 20}
         ]
     },
+    {type: SkillType.SEARCH,
+        entries: [
+            {name: 'Solr', level: 60},
+            {name: 'ElasticSearch', level: 50},
+        ]
+    },
     {type: SkillType.WEB_DEV,
         entries: [ 
             {name: 'HTML', level: 0},

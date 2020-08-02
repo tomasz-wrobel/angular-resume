@@ -9,11 +9,12 @@ export interface SkillEntry {
 }
 
 export enum SkillType {
-    LANGUAGE = "Languages",
+    LANGUAGE = "Programming Languages",
     FRAMEWORK = "Frameworks",
     WEB_DEV = "Web development",
     DB = "Databases",
     BUILD_TOOLS = "Build tools",
     METHODOLOGY = "Development methodologies",
+    SEARCH = "Search Engines",
     CONT_INT = "Continuous integration"
 }
