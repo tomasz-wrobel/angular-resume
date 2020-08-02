@@ -1,0 +1,9 @@
+<ul class="list-unstyled certificates">
+  <li *ngFor="let certificate of certificates">
+    <h3 class="mb-0">{{certificate.name}}</h3><span>{{certificate.date | date:'dd.MM.yyyy'}}</span>
+    <div>
+        <p class="text-justify">{{certificate.description}}</p>
+        <a href="{{certificate.link}}">See certificate</a>
+    </div>
+  </li>
+</ul>
