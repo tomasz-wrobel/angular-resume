@@ -1,2 +1,2 @@
-# resume-android
+# angular-resume
 
