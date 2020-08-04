@@ -1,19 +1,20 @@
+<div class="contact-box-wrapper">
 <div class="contact-box p-3">
-  <div class="row">
-    <div class="col-3 px-1">
+  <div class="row contact-box-row">
+    <div class="col-lg-3 col-1 px-1">
       <img class="logo" src="https://tomasz-wrobel.github.io/angular-resume/assets/img/logo.png">
     </div>
-    <div class="col-9 pl-0 mt-2">
-      <h1 class="mb-0">{{contactBox.firstName}} {{contactBox.lastName}}</h1>
+    <div class="col-lg-9 col-11  pl-0 mt-2">
+      <h1 class="name mb-0 text-nowrap">{{contactBox.firstName}} {{contactBox.lastName}}</h1>
     </div>
   </div>
-  <div class="row">
+  <div class="row contact-box-row">
     <h5 class="text-secondary">{{contactBox.title}}</h5>
   </div>
   <ul class="list-unstyled">
     <li>
         <span class="mx-2"><mat-icon aria-hidden="false">location_on</mat-icon></span>
-        <span class="aligned-with-icon">{{contactBox.city}}</span>
+        <span class="aligned-with-icon text-nowrap">{{contactBox.city}}</span>
     </li>
     <li>
       <span class="mx-2"><mat-icon aria-hidden="false">mail</mat-icon></span>
@@ -31,4 +32,5 @@
         <span class="aligned-with-icon"><a href="{{contactBox.github}}">Github</a></span>
       </li>
   </ul>
+</div>
 </div>
